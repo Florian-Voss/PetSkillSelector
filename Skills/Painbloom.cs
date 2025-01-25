@@ -1,8 +1,9 @@
-using PetSkillSelector.Abstractions;
+using PetSkillSelector.Abstractions.Skills;
+using PetSkillSelector.Abstractions.Stats;
+using PetSkillSelector.Stats;
 
 namespace PetSkillSelector.Skills;
-public class Painbloom(string name, Stat stat) : Talent(name, stat)
+public class Painbloom(Intelligence intelligence) : DamageTalent("Painbloom", intelligence, 140, 0.933F)
 {
-    public const uint BaseDmg = 140;
-    public const float ScalingRate = 0.933F;
+    
 }

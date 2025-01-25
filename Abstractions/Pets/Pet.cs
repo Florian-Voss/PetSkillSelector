@@ -1,4 +1,7 @@
-namespace PetSkillSelector.Abstractions;
+using PetSkillSelector.Abstractions.Skills;
+using PetSkillSelector.Abstractions.Stats;
+
+namespace PetSkillSelector.Abstractions.Pets;
 public abstract class Pet(string name, List<Stat> stats, List<Skill> skills)
 {
     protected string Name { get; set; } = name;
